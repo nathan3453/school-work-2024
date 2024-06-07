@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responize grid layout using class</title>
+    <style>
+        .row {
+            display: flex;
+            background-color: lightblue;
+            flex-direction: row;
+
+        }
+
+        @media (max-width: 800px) {
+            .row {
+                flex-direction: column;
+
+            }
+        }
+
+        .image {
+            margin: 0px;
+            padding: 5px 5px 5px 5px;
+            width: 75%;
+        }
+
+        .coloumn {
+            margin: 0px;
+            padding: 5px;
+
+        }    
+    </style>
+</head>
+<body>
+<div class="row"> 
+    <div class="column">
+        <img src="hank.png" >
+        <img src="hank.png" >
+    </div>
+    <div class="column">
+        <img src="walterwhite.png">
+        <img src="walterwhite.png">
+    </div>
+    <div class="column">
+        <img src="skylerwhite.png">
+        <img src="skylerwhite.png">
+    </div>
+</div>
+</body>
+</html>
